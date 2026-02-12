@@ -29,3 +29,31 @@ Now, we have all the ingredients to apply the substitution method.
 
 1. Substitution: $ \frac{du}{dx} - 1 = (u^2) $ -> $ \frac{du}{dx} - 1 = (u^2) $
 2. Separation of variables: $\frac{1}{u^2 + 1}{du} = dx $
+
+## How to solve ODE after finding integrating factor?
+
+After finding an integrating factor, we multiply it on both sides of the equation. This transforms the equation into a form that can be written as a derivative. Then, we integrate the equation to find the solution.
+
+Here is the procedure for the procedure for solving a first-order linear ODE
+
+1. Convert the ODE into the standard linear form.
+    - $y' + p(x)y = q(x)$
+2. Find the integrating factor.
+    - $u = e^{\int{p(x)}dx}$
+3. Multiply both sides of the equation by the integrating factor.
+    - $uy' + up(x)y = u(x)q(x)$
+4. Rewrite the left-hand side as a derivative
+    - $(uy)' = q(x)u$
+5. Integrate both sides.
+    - $\int{(uy)'} = uy + C = \int{q(x)u}dx + C$
+6. Find the solution.
+    - $y = \frac{\int{qu}dx}{u}$
+
+Let's solve this equation by the above procedure: $ xy' - y = x^3 $.
+
+- First, we need to convert the equation into the standard linear form: $y' -\frac{1}{x}y = x^2$
+- Second, let's find the integrating factor: $u = e^{-(\int{\frac{1}{x}}dx)} = (e^{ln(x)})^{-1} = \frac{1}{x}$.
+- Third, multiply both sides of equation by the integrating factor: $\frac{1}{x}y' - \frac{1}{x^2}y = x$
+- Fourth, rewrite the left side as as derivatve: $(\frac{1}{x}y)' = x$
+- Fifth, integrate both sides: $\frac{1}{x}y = \frac{1}{2}x^2 + C$
+- Sixth, find the solution: $y = \frac{1}{2}x^3 + Cx$
