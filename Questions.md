@@ -33,9 +33,9 @@ Let's consider this equation. $ a(x)y' + b(x)y = c(x) $
 
 # What is standard linear form?
 
-The standard linear form is a clear and standardized way to represent a first-order linear differential equation so that it can be solved systematically. This form provides a systematic view by separating the system the system dynamics $P(x)$ from the external input $Q(x)$. The term $P(x)y$ represents the rate of change depending on current state, whereas $Q(x)$ represents an external input that is independent of the current state.
+The standard linear form is a clear and standardized way to represent a first-order linear differential equation so that it can be solved systematically. This form provides a systematic view by separating the system the system dynamics $p(x)$ from the external input $Q(x)$. The term $p(x)y$ represents the rate of change depending on current state, whereas $q(x)$ represents an external input that is independent of the current state.
 
-It has the form $ \frac{dy}{dx} + P(x)y = Q(x) $ 
+It has the form $ \frac{dy}{dx} + p(x)y = q(x) $ 
 
 This form satisfies the following conditions.
 1. The coefficient of $\frac{dy}{dx}$ is 1.
@@ -44,7 +44,7 @@ This form satisfies the following conditions.
 
 ## Why do we convert the DE into a standard linear form?
 
-In the stardard linear form, we can solve the equation mechanically using a method called intergral factor. Here is the integrating factor $ μ(x) = e^{\int{P(x)}dx} $. 
+In the stardard linear form, we can solve the equation mechanically using a method called intergral factor. Here is the integrating factor $ μ(x) = e^{\int{p(x)}dx} $. 
 
 ### Where the integrating factor come frome?
 
